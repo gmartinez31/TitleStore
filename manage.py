@@ -3,7 +3,15 @@ import os
 import sys
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "titlestore.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "TheTitleStor.settings")
+    
+    if 'devserver' in sys.argv or 'runserver' in sys.argv:
+        os.environ.setdefault("ENVIRONMENT", "development")
+        
+    elif 'prodserver' in sys.argv or 'runuwsgi' in sys.argv:
+        os.environ.setdefault("UWSGI_MODULE", "TheTitleStor.wsgi")
+        os.environ.setdefault("ENVIRONMENT", "production")
+        
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
