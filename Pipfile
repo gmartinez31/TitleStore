@@ -15,6 +15,7 @@ djzen = "*"
 pytz = "==2017.3"
 whitenoise = "==3.3.1"
 "psycopg2" = "*"
+django-webpack-loader = "*"
 
 
 [dev-packages]
