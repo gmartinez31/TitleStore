@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'djzen',
-    'webpack_loader',
 ]
 
 try:
@@ -67,7 +66,7 @@ ROOT_URLCONF = 'TheTitleStor.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'TheTitleStor/templates'), ],
+        'DIRS': ['titlestor/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -138,12 +137,6 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static-compiled")
 
-WEBPACK_LOADER = {
-    'DEFAULT': {
-            'BUNDLE_DIR_NAME': 'bundles/',
-            'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.dev.json'),
-        }
-}
 
 # Uncomment for forever-cacheable files and compression support
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
