@@ -16,6 +16,9 @@ class Clients(models.Model):
         # stuff
     )
 
+    def __str__(self):
+        return self.firstName, self.lastName
+
 class Vehicles(models.Model):
     year = models.IntegerField()
     make = models.CharField(max_length=256)
@@ -29,3 +32,6 @@ class Vehicles(models.Model):
         on_delete=models.CASCADE,
         # stuff
     )
+
+    def __str__(self):
+        return self.year, self.make, self.model
