@@ -17,7 +17,7 @@ class Clients(models.Model):
     )
 
     def __str__(self):
-        return self.firstName, self.lastName
+        return self.firstName + self.lastName
 
 class Vehicles(models.Model):
     year = models.IntegerField()
@@ -34,4 +34,4 @@ class Vehicles(models.Model):
     )
 
     def __str__(self):
-        return self.year, self.make, self.model
+        return self.year + self.make + self.model
