@@ -1,14 +1,13 @@
-from django.shortcuts import render
-
+from django.template.response import TemplateResponse
 
 def index(request):
-    return render(request, 'index.html')
+    return TemplateResponse(request, 'index.html', {})
 
 def about(request):
-    return render(request, 'about.html')
+    return TemplateResponse(request, 'about.html', {})
 
 def confirmation(request):
-    return render(request, 'confirmation.html')
+    return TemplateResponse(request, 'confirmation.html', {})
 
 def error(request):
-    return render(request, 'error.html')
+    return TemplateResponse(request, 'error.html', {})
