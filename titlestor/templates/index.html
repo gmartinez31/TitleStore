@@ -8,6 +8,8 @@
     <p>This is the home page</p>
     <form action='{url "confirmation"}' method='POST'>
         {% csrf_token %}
+        {{ Cform.as_p }}
+        {{ Vform.as_p }}
         <button type='submit'>Submit</button>
     </form>
 <!-- stuff -->

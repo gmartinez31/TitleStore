@@ -1,9 +1,13 @@
 from django.template.response import TemplateResponse
 from django.http import Http404
+from .forms import ClientForm, VehicleForm
 
 
 def index(request):
-    return TemplateResponse(request, 'index.html', {})
+    Cform = ClientForm()
+    Vform = VehicleForm()
+
+    return TemplateResponse(request, 'index.html', {'Cform': Cform, 'Vform': Vform})
 
 def about(request):
     return TemplateResponse(request, 'about.html', {})

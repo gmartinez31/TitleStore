@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e830026bda304b3c95d10bf70036fae0843d6857b6eefaf5f14f9219eb7c24db"
+            "sha256": "771c51295d4d79375701f71ed905d4a97aaef53028bb0ab272df284eb18b5ed4"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -27,6 +27,13 @@
         ]
     },
     "default": {
+        "babel": {
+            "hashes": [
+                "sha256:f20b2acd44f587988ff185d8949c3e208b4b3d5d20fcab7d91fe481ffa435528",
+                "sha256:6007daf714d0cd5524bbe436e2d42b3c20e68da66289559341e48d2cd6d25811"
+            ],
+            "version": "==2.5.1"
+        },
         "click": {
             "hashes": [
                 "sha256:29f99fc6125fbc931b758dc053b3114e55c77a6e4c6c3a2674a2dc986016381d",
@@ -47,6 +54,12 @@
                 "sha256:ec0ef1ba23ef95b1620f5d481334413700fb33f45cd76d56a63f4b0b1d76976a"
             ],
             "version": "==1.1.0"
+        },
+        "django-phonenumber-field": {
+            "hashes": [
+                "sha256:d96c274a6aa9afd4eb4fe922e475a45706d997b2bea22b87f3afc9fb0012db84"
+            ],
+            "version": "==2.0.0"
         },
         "django-webpack-loader": {
             "hashes": [
