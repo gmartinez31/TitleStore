@@ -1,4 +1,5 @@
 from django.template.response import TemplateResponse
+from django.http import Http404
 
 def index(request):
     return TemplateResponse(request, 'index.html', {})
@@ -11,3 +12,4 @@ def confirmation(request):
 
 def error(request):
     return TemplateResponse(request, 'error.html', {})
+
