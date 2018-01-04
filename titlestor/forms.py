@@ -1,5 +1,13 @@
 from django import forms
 from .models import Client, Vehicle
 
-class IndexForm(forms.Form):
-    post = forms.CharField()
+class ClientForm(forms.ModelForm):
+    class Meta:
+        model = Client
+        exclude = ('vehicle', )
+
+
+class VehicleForm(forms.ModelForm):
+    class Meta:
+        model = Vehicle
+        fields = '__all__'
