@@ -6,9 +6,9 @@
 
 {% block content %}
     <p>This is the home page</p>
-    <form action='' method='POST'>
+    <form action='{url "confirmation"}' method='POST'>
         {% csrf_token %}
-        {% include 'form.html' %}
+        {% form %}
         <button type='submit'>Submit</button>
     </form>
 <!-- stuff -->

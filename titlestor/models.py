@@ -2,7 +2,7 @@ from django.db import models
 
 # if you make changes or add something be sure to run migrations: p man.py makemigrations then migrate
 
-class Clients(models.Model):
+class Client(models.Model):
     firstName = models.CharField(max_length=256, default='First')
     middleName = models.CharField(max_length=256, default='Middle')
     lastName = models.CharField(max_length=256, default='Last')
@@ -11,7 +11,7 @@ class Clients(models.Model):
     dlNum = models.IntegerField()
     expDate = models.IntegerField()
     vehicle = models.ForeignKey(
-        'Vehicles',
+        'Vehicle',
         on_delete=models.CASCADE,
         # stuff
     )
@@ -19,7 +19,7 @@ class Clients(models.Model):
     def __str__(self):
         return self.firstName + self.lastName
 
-class Vehicles(models.Model):
+class Vehicle(models.Model):
     year = models.IntegerField()
     make = models.CharField(max_length=256, default='Make')
     model = models.CharField(max_length=256, default='Model')
