@@ -15,9 +15,10 @@ class ClientForm(forms.ModelForm):
             'dlNum': _('Driver"s License Number'),
             'expDate': _('DL Expiration Date')
         }
-        widgets = {
+        # widgets = {
+        #     name = 'firstname' + 'middlename'
             
-        }
+        # }
 
 
 class VehicleForm(forms.ModelForm):
