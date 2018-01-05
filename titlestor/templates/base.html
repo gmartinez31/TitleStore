@@ -11,8 +11,60 @@
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+    <header class="header" id="header">
+        <div class="container">
+            <figure class="logo animated fadeInDown delay-07s">
+                <a href="#">
+                    LOGO
+                </a>
+            </figure>
+            <h1 class="animated fadeInDown delay-07s">Welcome To The Title Stor</h1>
+            <ul class="we-create animated fadeInUp delay-1s">
+                <li>Short Bio</li>
+            </ul>
+            <a class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
+        </div>
+    </header>
+
     <!-- navbar -->
+    <nav class="main-nav-outer" id="test">
+        <div class="container">
+            <ul class="main-nav">
+                <li>
+                    <a href="#header">Home</a>
+                </li>
+                <li>
+                    <a href="#service">Services</a>
+                </li>
+                <li>
+                    <a href="#Portfolio">About</a>
+                </li>
+                <li class="small-logo">
+                    <a href="#header">
+                        LOGO
+                    </a>
+                </li>
+                <li>
+                    <a href="#client">Money Back Guarantee</a>
+                </li>
+                <li>
+                    <a href="#team">FAQ</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <a class="res-nav_click" href="#">
+                <i class="fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
     {% block content %}{% endblock %}
+
     <!-- footer -->
+    <footer>
+        <p>This is where the footer will go</p>
+    </footer>
 </body>
 </html>
