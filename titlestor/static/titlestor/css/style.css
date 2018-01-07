@@ -1,3 +1,17 @@
-body {
-    background-color: ghostwhite;
+/* Header Styles
+---------------------------------*/
+
+.header{
+	text-align:center;
+	background:url(../img/houston-skyline.jpg) center center no-repeat;
+	padding:280px 0;
+}
+
+.header h1{
+	font-family: 'Montserrat',sans-serif;
+	font-size:50px;
+	font-weight:400;
+	letter-spacing: -1px;
+	margin:0 0 22px 0 ;
+	color:#fff;
 }
