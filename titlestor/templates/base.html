@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- be sure to account for SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'titlestor/style.css' %}" type="text/css">
-    <!-- be sure to account for SEO -->
-    
+    <!-- CSS -->
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'titlestor/css/style.css' %}" type="text/css">
+    <link href="../static/titlestor/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../static/titlestor/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="../static/titlestor/css/responsive.css" rel="stylesheet" type="text/css">
+    <link href="../static/titlestor/css/animate.css" rel="stylesheet" type="text/css">
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="../static/titlestor/js/jquery.1.8.3.min.js"></script>
+    <script type="text/javascript" src="../static/titlestor/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../static/titlestor/js/jquery-scrolltofixed.js"></script>
+    <script type="text/javascript" src="../static/titlestor/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../static/titlestor/js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="../static/titlestor/js/wow.js"></script>
+    <script type="text/javascript" src="../static/titlestor/js/classie.js"></script>
+
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
