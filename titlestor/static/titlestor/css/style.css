@@ -255,7 +255,23 @@ color: #fff;
 	margin:0 0 60px 0;
 }
 
+#bonded {
+	font-family: 'Montserrat', sans-serif;
+	color:#222222;
+	font-size:18px;
+	margin:0 0 5px 0;
+	text-transform:uppercase;
+	font-weight:500;
+}
 
+#bonded-text {
+	line-height:24px;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#888888;
+}
 
 /* Featured Work
 ---------------------------------*/
