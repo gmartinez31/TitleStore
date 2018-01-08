@@ -27,24 +27,19 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
 
-
-
-    <!-- for images  -->
-    <!-- <img src="{% static 'titlestor/img/blah.jpg' %}" alt="desc"> -->
-
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     <header class="header" id="header">
         <div class="container">
-            <figure class="logo animated fadeInDown delay-07s">
+            <!-- <figure class="logo animated fadeInDown delay-07s">
                 <a href="#">
                     LOGO
                 </a>
-            </figure>
+            </figure> -->
             <h1 class="animated fadeInDown delay-07s">Welcome To The Title Stor</h1>
             <ul class="we-create animated fadeInUp delay-1s">
-                <li>Short Bio</li>
+                <li>WE ARE A TITLE SERVICE BUSINESS THAT SIMPLIFIES THE PROCESS FOR OBTAINING A VEHICLE TITLE</li>
             </ul>
             <a class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
         </div>
@@ -63,11 +58,11 @@
                 <li>
                     <a href="#Portfolio">About</a>
                 </li>
-                <li class="small-logo">
+                <!-- <li class="small-logo">
                     <a href="#header">
                         LOGO
                     </a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#client">Money Back Guarantee</a>
                 </li>
@@ -133,36 +128,19 @@
         <div class="container">
             <h2 id='services'>About Us</h2>
             <h6 id='servsum'>We're a family-owned title service business with a strong desire to help people.</h6>
-            <div class="team-leader-block clearfix">
-                <div class="team-leader-box">
-                    <div class="team-leader wow fadeInDown delay-03s">
-                        <div class="team-leader-shadow">
-                            <a href="#"></a>
-                        </div>
-                        <img src="{% static 'titlestor/img/houstonday.jpg' %}" alt="houston skyline day">
-                        <ul>
-                            <li>
-                                <a href="#" class="fa-twitter"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa-facebook"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa-pinterest"></a>
-                            </li>
-                            <li>
-                                <a href="#" class="fa-google-plus"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="wow fadeInDown delay-03s"> Founded in Houston, TX in 1995, our initial purpose was to provide local vehicle dealers with a way to reach us for
+            <div class="row">
+                <figure class="col-lg-4 col-sm-6  text-right wow fadeInLeft delay-02s">
+                    <img src="{% static 'titlestor/img/houstonday.jpg' %}" alt="houston skyline day">
+                </figure>
+                <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
+                    <p id='bonded-text' class="wow fadeInDown delay-03s"> Founded in Houston, TX in 1995, our initial purpose was to provide local vehicle dealers with a way to reach us for
                     service and provide their employees with detailed information and instructions on the processing of documents through the
-                    Harris County Tax Assessors Annex.</p>
-                    <p class="wow fadeInDown delay-03s">As time passed and we became more aware of our sites exposure to the general public,
+                    Harris County Tax Assessors Annex.</p> <br>
+                    <p id='bonded-text' class="wow fadeInDown delay-03s">As time passed and we became more aware of our sites exposure to the general public,
                     we began our long process of fine-tuning our site to better serve our customers. What you see today is the outcome of those
                     endeavors. It has been a long journey to reach this point, but we are very proud of our site and the services we have produced
-                    thus far.</p>
-                    <p class="wow fadeInDown delay-03s">Our goal is to make our service hassle and worry free for you. In our consultation we will take the time to make sure you
+                    thus far.</p><br>
+                    <p id='bonded-text' class="wow fadeInDown delay-03s">Our goal is to make our service hassle and worry free for you. In our consultation we will take the time to make sure you
                     understand how our services works, what paperwork we will provide, detailed service instructions needed for successfully
                     completing your transaction through your local state and county offices, and a comprehensive estimate on what state or county
                     fees are involved along with a flat rate fee for our services.</p>
