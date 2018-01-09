@@ -9,8 +9,6 @@ def index(request):
 
     return TemplateResponse(request, 'index.html', {'Cform': Cform, 'Vform': Vform})
 
-def about(request):
-    return TemplateResponse(request, 'about.html', {})
 
 def confirmation(request):
     return TemplateResponse(request, 'confirmation.html', {})
