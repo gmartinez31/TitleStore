@@ -5,17 +5,18 @@
 {% endblock %}
 
 {% block content %}
-
-    <p>This is the home page</p>
-    <form action='{url "confirmation"}' method='POST'>
-        {% csrf_token %}
-        <!-- {% for field in Cform.fields %}
-            
-        {% endfor %} -->
-        {{ Cform.as_p }}
-        {{ Vform.as_p }}
-        <button type='submit'>Submit</button>
-    </form>
-<!-- stuff -->
-
+<div class="container">
+    <h2 id='services'>Submit a Service Request</h2>
+    <h6 id='servsum'>Please fill out all of the fields and we will contact you shortly.</h6>
+    <div class="row">
+        <div class="form">
+            <form action="{url 'confirmation'}" method="POST" class="contactForm">
+                {% csrf_token %}
+                {{ Cform }}
+                {{ Vform }}
+                <button type='submit'>Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}

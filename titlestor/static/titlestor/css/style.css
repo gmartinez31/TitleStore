@@ -642,9 +642,6 @@ border: 2px solid #fff;
 	padding:25px 0 100px;
 }
 
-.main-section.contact{
-	background:url(../img/bg-map.png) left 190px no-repeat;
-}
 .contact-info-box{
 	font-size:15px;
 	margin:0 0 14px 68px;
@@ -710,15 +707,11 @@ border: 2px solid #fff;
 .facebook a:hover {
 	background: #3b5998;
 }
-.pinterest a:hover {
-	background: #cb2026;
-}
 .gplus a:hover {
 	background: #dd4b39;
 }
-.dribbble a:hover {
-	background: #ea4c89;
-}
+
+/* CONTACT FORM  */
 
 .form{
 	margin:0 66px 0 30px;
