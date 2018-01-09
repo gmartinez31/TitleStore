@@ -149,6 +149,8 @@
         </div>
     </section>
 
+    {% block content %}{% endblock %}
+
     <!-- Money Back Guarantee -->
     <section class="main-section" id='money'>
         <div class="container">
@@ -209,8 +211,9 @@
 
     <!-- Contact Form -->
         <div class="container">
+            <h2 id='services'>Contact Us</h2>
+            <h6 id='servsum'>Have any questions? Feel free to fill the form below out and we will contact you shortly.</h6>
             <section class="main-section contact" id="contact">
-        
                 <div class="row">
                     <div class="col-lg-6 col-sm-7 wow fadeInLeft">
                         <!-- <div class="contact-info-box address clearfix">
@@ -246,19 +249,9 @@
                                     <i class="fa-facebook"></i>
                                 </a>
                             </li>
-                            <li class="pinterest">
-                                <a href="#">
-                                    <i class="fa-pinterest"></i>
-                                </a>
-                            </li>
                             <li class="gplus">
                                 <a href="#">
                                     <i class="fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li class="dribbble">
-                                <a href="#">
-                                    <i class="fa-dribbble"></i>
                                 </a>
                             </li>
                         </ul>
@@ -268,7 +261,7 @@
         
                             <div id="sendmessage">Your message has been sent. Thank you!</div>
                             <div id="errormessage"></div>
-                            <form action="" method="post" role="form" class="contactForm">
+                            <form action="SOMETHING MUST GO HERE OKAY LOOK HEY LOOK HEY LOOK HEY LOOOOOOOOOOK" method="POST" role="form" class="contactForm">
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars"
                                     />
@@ -300,13 +293,14 @@
             </section>
         </div>
 
-    {% block content %}{% endblock %}
-
     <!-- footer -->
-    <footer>
-        <p>This is where the footer will go</p>
+    <footer class="footer">
+        <div class="container">
+            <span class="copyright">&copy; 2018 TheTitleStor.com. All Rights Reserved</span>
+        </div>
     </footer>
 
+    <!-- jQuery script tags -->
     <script type="text/javascript">
 		$(document).ready(function(e) {
 			$('#test').scrollToFixed();
@@ -326,7 +320,6 @@
 		});
 		wow.init();
 	</script>
-
 
 	<script type="text/javascript">
 		$(window).load(function() {
