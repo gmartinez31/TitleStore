@@ -671,6 +671,13 @@ border: 2px solid #fff;
 	display:block;
 	overflow:hidden;
 }
+.contactemail{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	font-weight:normal;
+	color:#888888;
+	margin-top: 20px;
+}
 .social-link{
 	padding:35px 0;
 	margin:0 0 0 68px;
@@ -801,7 +808,7 @@ border: 2px solid #fff;
 ---------------------------------*/
 
 .footer{
-	background:url(../img/houstonsky.jpg) center bottom no-repeat;
+	background:url(../img/houstonsky.jpg) center top no-repeat;
 	padding:35px 0 35px;
 }
 
@@ -829,6 +836,11 @@ border: 2px solid #fff;
 	max-width: 1140px;
 }
 
+.copyright {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
 
 /* Animation Timers
 ---------------------------------*/
